@@ -26,7 +26,10 @@ class MillPlatform {
   }
 
   async getAllHeaters() {
-    const homes = await this.mill.getHomes();
+    let homes = await this.mill.getHomes();
+    if (this.config.selectedHomes) {
+      homes = { ...homes, homeList: homes.homeList.filter(r => this.config.selectedHomes.includes(r.homeName)) };
+    }
     const ignoredDevices = this.config.ignoredDevices || [];
     const heaters = [];
     const independentDevices = await Promise.all(
