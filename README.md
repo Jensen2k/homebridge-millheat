@@ -8,6 +8,10 @@ The only reason this extension exist is thanks to Andreas Stræte. I have done o
 to make it work for my 3.gen Mill wall mounted heaters. I do plan to keep using this plugin for this only until Mill
 & Apple Home supports Matter. Then this will be deprecated. 
 
+### Changes by Jensen2k
+I needed the abillity to specify which home I wanted to show up in Homebridge, since I'm also running Mill at the cabin.
+This can now be done by specifying an array called "selectedHomes" in config.
+
 
 ## Installation
 
@@ -25,7 +29,8 @@ npm install homebridge-millheat -g
             "name": "millheat",
             "username" : "your@email",
             "password": "hunter2",
-            "ignoredDevices": []
+            "ignoredDevices": [],
+            "selectedHomes": ["MyHome"]
         }
     ]
 }
