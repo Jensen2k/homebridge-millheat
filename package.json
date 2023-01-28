@@ -1,8 +1,8 @@
 {
-  "displayName": "Mill Panelowen",
-  "name": "homebridge-plugin-mill-panelowen",
-  "version": "2.0.13",
-  "description": "Homebridge plugin for Mill panel ovens.",
+  "displayName": "Mill heaters",
+  "name": "homebridge-mill-heater",
+  "version": "2.1",
+  "description": "Homebridge plugin for Mill panel ovens. Based on Henrik Sandbergs plugin with multi-home support.",
   "main": "index.js",
   "keywords": [
     "homebridge",
@@ -11,7 +11,7 @@
     "homebridge-plugin"
   ],
   "bugs": {
-    "url": "https://github.com/HenrikSandberg/homebridge-millheat/issues"
+    "url": "https://github.com/Jensen2k/homebridge-millheat"
   },
   "files": [
     "CHANGELOG.md",
@@ -31,7 +31,7 @@
   "dependencies": {
     "millheat-api": "0.0.8"
   },
-  "author": "Henrik Sandberg",
+  "author": "Martin Jensen",
   "license": "MIT",
   "devDependencies": {
     "commitizen": "^3.0.0",
@@ -55,6 +55,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HenrikSandberg/homebridge-millheat.git"
+    "url": "git+https://github.com/Jensen2k/homebridge-millheat.git"
   }
 }
